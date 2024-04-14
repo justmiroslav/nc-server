@@ -1,0 +1,12 @@
+[Unit]
+Description=NC Server
+After=network.target
+
+[Service]
+ExecStart=/home/ubuntu/nc-server/server/nc_server
+WorkingDirectory=/home/ubuntu/nc-server/server
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
